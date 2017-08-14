@@ -1,11 +1,7 @@
 function Column(id, name) {
-    this.id = id;
-    this.name = name || 'No name given';
-
-	var self = this;
-	
-	this.id = randomString();
-	this.name = name;
+    var self = this;
+	this.id = id;
+	this.name = name || 'No name given';
 	this.element = createColumn();
 
 	function createColumn() {
@@ -62,7 +58,3 @@ Column.prototype = {
  }
 };
 
-function Column(id, name) {
-    this.id = id;
-    this.name = name || 'No name given';
-}
